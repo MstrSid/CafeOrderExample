@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CafeOrderExample</string>
+    <string name="txt_welcome">Welcome!</string>
+    <string name="txt_enter_name_hint">Enter name...</string>
+    <string name="txt_enter_password_hint">Enter password...</string>
+    <string name="txt_order_button">Order</string>
+    <string name="txt_coffee_logo_decr">coffe logo</string>
+</resources>
