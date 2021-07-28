@@ -1,8 +1,41 @@
 <resources>
-    <string name="app_name">CafeOrderExample</string>
+    <string name="app_name">Cafe Order Example</string>
     <string name="txt_welcome">Welcome!</string>
     <string name="txt_enter_name_hint">Enter name...</string>
     <string name="txt_enter_password_hint">Enter password...</string>
     <string name="txt_order_button">Order</string>
     <string name="txt_coffee_logo_decr">coffe logo</string>
+    <string name="warning_fill_fields">Password or name is empty</string>
+    <string name="txt_create_order">Create order</string>
+    <string name="hello_user">Hello %s! What will you drink?</string>
+    <string name="txt_tea">Tea</string>
+    <string name="txt_coffee">Coffee</string>
+    <string name="txt_drink_options">Drink options</string>
+    <string name="sugar">Sugar</string>
+    <string name="milk">Milk</string>
+    <string name="lemon">Lemon</string>
+    <string name="drink_type">Drink type</string>
+    <string name="logo_image">logo_image</string>
+    <string name="default_name">anonimus</string>
+    <string name="default_password">anonimus</string>
+    <string name="order_name">"Name: "</string>
+    <string name="order_drink">"Drink: "</string>
+    <string name="order_options">"Options: "</string>
+    <string name="order_options_none">none</string>
+    <string name="order_password">"Password: "</string>
+    <string name="order_type_drink">"Type drink: "</string>
+
+    <string-array name="coffee_types">
+        <item>Americano</item>
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Espresso</item>
+    </string-array>
+
+    <string-array name="tea_types">
+        <item>Black</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+    </string-array>
 </resources>
