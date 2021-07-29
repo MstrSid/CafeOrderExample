@@ -72,21 +72,24 @@ public class CreateOrderActivity extends AppCompatActivity {
         builderDrinkOptions.append(getString(R.string.order_password)).append(password).append("\n");
         builderDrinkOptions.append(getString(R.string.order_drink)).append(drink).append("\n");
 
-        if(drink.equals(getString(R.string.txt_tea))){
+        if (drink.equals(getString(R.string.txt_tea))) {
             drink_type = binding.spinnerTea.getSelectedItem().toString();
         } else drink_type = binding.spinnerCoffee.getSelectedItem().toString();
         builderDrinkOptions.append(getString(R.string.order_type_drink)).append(drink_type).append("\n");
 
         builderDrinkOptions.append(getString(R.string.order_options)).append("\n");
-        if(binding.cbMilk.isChecked()){
+        if (binding.cbMilk.isChecked()) {
             builderDrinkOptions.append(getString(R.string.milk)).append("\n");
-        } else
-        if(binding.cbSugar.isChecked()){
+        }
+        if (binding.cbSugar.isChecked()) {
             builderDrinkOptions.append(getString(R.string.sugar)).append("\n");
-        } else
-        if(binding.cbLemon.isChecked() && drink.equals(getString(R.string.txt_tea))){
+        }
+        if (binding.cbLemon.isChecked() && drink.equals(getString(R.string.txt_tea))) {
             builderDrinkOptions.append(getString(R.string.lemon)).append("\n");
-        } else builderDrinkOptions.append(getString(R.string.order_options_none)).append("\n");
+        }
+        if (!binding.cbMilk.isChecked() && !binding.cbSugar.isChecked() && !binding.cbLemon.isChecked()) {
+            builderDrinkOptions.append(getString(R.string.order_options_none)).append("\n");
+        }
 
         String order = builderDrinkOptions.toString();
         Intent intent = new Intent(v.getContext(), OrderDetailActivity.class);
